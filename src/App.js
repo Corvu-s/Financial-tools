@@ -1,9 +1,9 @@
 import React from "react";
-
+import Drip from "./tools/DRIP";
 function App() {
   return (
     <div>
-      <p>fincial tools</p>
+      <Drip />
       {/*
       inputs:
       Ticker name
@@ -11,6 +11,7 @@ function App() {
       52 week high and low
       highest/lowest dividend paid
       number of dividens in the past year
+
       outputs:
       average price
       average dividend

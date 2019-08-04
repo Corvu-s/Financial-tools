@@ -1,0 +1,294 @@
+.back {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+
+  background: #658dbc;
+}
+.input {
+  position: absolute;
+  width: 677px;
+  height: 682px;
+  left: 182px;
+  top: 234px;
+
+  background: #2a2f48;
+  border-radius: 10px;
+}
+.output {
+  position: absolute;
+  width: 677px;
+  height: 682px;
+  left: 1055px;
+  top: 234px;
+
+  background: #2a2f48;
+  border-radius: 10px;
+}
+.ticker {
+  position: absolute;
+  width: 106px;
+  height: 50px;
+  left: 194px;
+  top: 264px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.todaysPrice {
+  position: absolute;
+  width: 221px;
+  height: 50px;
+  left: 194px;
+  top: 359px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.weekHigh {
+  position: absolute;
+  width: 224px;
+  height: 45px;
+  left: 194px;
+  top: 456px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.weekLow {
+  position: absolute;
+  width: 304px;
+  height: 43px;
+  left: 194px;
+  top: 541px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.highDiv {
+  position: absolute;
+  width: 377px;
+  height: 46px;
+  left: 194px;
+  top: 646px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.lowDiv {
+  position: absolute;
+  width: 375px;
+  height: 49px;
+  left: 194px;
+  top: 739px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.divPerYear {
+  position: absolute;
+  width: 347px;
+  height: 50px;
+  left: 194px;
+  top: 809px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.tickerBox {
+  position: absolute;
+  width: 220px;
+  height: 69px;
+  left: 623px;
+  top: 254px;
+
+  background: #c4c4c4;
+  border-radius: 30px;
+}
+.priceBox {
+  position: absolute;
+  width: 220px;
+  height: 69px;
+  left: 623px;
+  top: 349px;
+
+  background: #c4c4c4;
+  border-radius: 30px;
+}
+.highBox {
+  position: absolute;
+  width: 220px;
+  height: 69px;
+  left: 623px;
+  top: 444px;
+
+  background: #c4c4c4;
+  border-radius: 30px;
+}
+.lowBox {
+  position: absolute;
+  width: 220px;
+  height: 69px;
+  left: 623px;
+  top: 539px;
+
+  background: #c4c4c4;
+  border-radius: 30px;
+}
+.paidBox {
+  position: absolute;
+  width: 220px;
+  height: 69px;
+  left: 623px;
+  top: 634px;
+
+  background: #c4c4c4;
+  border-radius: 30px;
+}
+.lowDivBox {
+  position: absolute;
+  width: 220px;
+  height: 69px;
+  left: 623px;
+  top: 729px;
+
+  background: #c4c4c4;
+  border-radius: 30px;
+}
+.perYearBox {
+  position: absolute;
+  width: 220px;
+  height: 69px;
+  left: 623px;
+  top: 824px;
+
+  background: #c4c4c4;
+  border-radius: 30px;
+}
+.avgPrice {
+  position: absolute;
+  width: 224px;
+  height: 50px;
+  left: 1071px;
+  top: 264px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.avgDiv {
+  position: absolute;
+  width: 280px;
+  height: 50px;
+  left: 1071px;
+  top: 351px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.divYeild {
+  position: absolute;
+  width: 386px;
+  height: 45px;
+  left: 1071px;
+  top: 456px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.today {
+  position: absolute;
+  width: 375px;
+  height: 43px;
+  left: 1071px;
+  top: 542px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.cost {
+  position: absolute;
+  width: 191px;
+  height: 46px;
+  left: 1071px;
+  top: 646px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.income {
+  position: absolute;
+  width: 375px;
+  height: 49px;
+  left: 1071px;
+  top: 739px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
