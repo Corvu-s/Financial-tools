@@ -1,14 +1,14 @@
 import React from "react";
-import Drip from "./tools/DRIP";
+import Stuff from "./tools/DRIP";
 function App() {
   return (
     <div>
-      <Drip />
+      <Stuff />
       {/*
       inputs:
       Ticker name
       Todays price
-      52 week high and low
+      52 week high and lo
       highest/lowest dividend paid
       number of dividens in the past year
 

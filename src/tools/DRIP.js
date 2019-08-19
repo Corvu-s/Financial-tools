@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Display from "./DripDisp";
 import "./style.css";
 function Drip() {
   const [ticker, setTicker] = useState("");
@@ -8,7 +9,23 @@ function Drip() {
   const [highDiv, setHighDiv] = useState(0);
   const [lowDiv, setLowDiv] = useState(0);
   const [divYear, setDivYear] = useState(0);
-
+  const [button, setButton] = useState(false);
+  const [stock, setStock] = useState({});
+  useEffect(() => {
+    setStock({
+      averagePrice: (Number(weekHigh) + Number(weekLow)) / 2,
+      divReturn: Number(highDiv) + Number(lowDiv) / 2,
+      today: Number(weekHigh) / Number(lowDiv) + 1,
+      cost: (Number(weekHigh) / Number(lowDiv) + 1) * dailyPrice,
+      income:
+        (Number(highDiv) + Number(lowDiv) / 2) *
+        (Number(weekHigh) / Number(lowDiv) + 1)
+    });
+  }, [button]);
+  function HandleClick() {
+    setButton(true);
+    console.log(stock);
+  }
   return (
     <div className="back">
       <div className="input" />
@@ -54,25 +71,9 @@ function Drip() {
         className="perYearBox"
         onChange={e => setDivYear(e.target.value)}
       />
-      <div className="output" />
-      <p className="avgPrice">
-        Average Price:{(Number(weekHigh) + Number(weekLow)) / 2}
-      </p>
-      <p className="avgDiv">
-        Average Dividend return:{Number(highDiv) + Number(lowDiv) / 2}
-      </p>
-      <p className="divYeild">Expected Dividend Yeild:</p>
-      <p className="today">
-        Shares required Today: {Number(weekHigh) / Number(lowDiv) + 1}
-      </p>
-      <p className="cost">
-        Cost to Buy:{(Number(weekHigh) / Number(lowDiv) + 1) * dailyPrice}
-      </p>
-      <p className="income">
-        Monthly Income:
-        {(Number(highDiv) + Number(lowDiv) / 2) *
-          (Number(weekHigh) / Number(lowDiv) + 1)}
-      </p>
+      <input type="button" onClick={HandleClick} />
+
+      <Display info={stock} />
     </div>
   );
 }
