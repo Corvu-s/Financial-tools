@@ -13,6 +13,7 @@ function Drip() {
   const [stock, setStock] = useState({});
   useEffect(() => {
     setStock({
+      symbol: ticker,
       averagePrice: (Number(weekHigh) + Number(weekLow)) / 2,
       divReturn: Number(highDiv) + Number(lowDiv) / 2,
       today: Number(weekHigh) / Number(lowDiv) + 1,
